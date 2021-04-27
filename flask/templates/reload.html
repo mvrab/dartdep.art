@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+  <html>
+  <title>Spring Valley Departures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+  <body bgcolor='black'>
+
+  <style>
+  div.compact {
+    line-height: 20px;
+  }
+  h1 {
+    margin: 2px;
+  }
+  h4 {
+    margin: 10px;
+  }
+  h5 {
+    margin: 1px;
+    font-size:44px;
+  }
+  </style>
+
+
+  <div class="w3-row-padding w3-black">
+    <div class='w3-border-bottom w3-border-white'>
+      <div class="w3-row w3-display-container">
+        <div class="w3-container w3-twothird">
+          <h5 class="w3-display-left">DART Departures</h5>
+        </div>
+        <div class="w3-container w3-third w3-right-align">
+          <h5>{{ clockstr }}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="w3-card-4">
+      <h1>Northbound</h1>
+
+
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="w3-card-4">
+      <h1>Southbound</h1>
+
+
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+    <div class="w3-container w3-center w3-text-gray">
+      m.dart.org: no response
+    </div>
+    <div class="w3-container w3-center w3-text-gray">
+      retrying... Message from server: {{ attemptstr }}
+    </div>
+
+  </div>
+
+  </body>
+  </html>

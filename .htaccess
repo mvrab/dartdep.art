@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteBase /
+RewriteRule ^(media/.*)$ - [L]
+RewriteRule ^(admin_media/.*)$ - [L]
+RewriteRule ^(flask\.wsgi/.*)$ - [L]
+RewriteRule ^(.*)$ flask/flask.wsgi/$1 [QSA,PT,L]

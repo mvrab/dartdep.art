@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Dart Train Times</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body style="background-color:black;">
+
+<div class="w3-container w3-bottombar w3-border-yellow">
+<h2 class="w3-text-white w3-center">DART Rail Tracker</h2>
+<p class="w3-large w3-text-white w3-center">Choose a station to view train times:</p>
+</div>
+
+<div class="w3-row">
+  <div class="w3-quarter w3-container">
+    {{ column1str|safe }}
+  </div>
+  <div class="w3-quarter w3-container">
+    {{ column2str|safe }}
+  </div>
+  <div class="w3-quarter w3-container">
+    {{ column3str|safe }}
+  </div>
+  <div class="w3-quarter w3-container">
+    {{ column4str|safe }}
+  </div>
+</div>
+</body>
+</html>      
