@@ -130,7 +130,7 @@ def index():
         
         
         
-        response = requests.get('https://m.dart.org/railSchedule.asp?switch=pushRailStops3&ddlRailStopsFrom='+str(stop_id)+'&option=1')
+        response = requests.get('https://m.dart.org/railSchedule.asp?switch=pushRailStops3&ddlRailStopsFrom='+str(stop_id)+'&option=1', timeout=3)
         soup = BeautifulSoup(response.text, 'html.parser')
         allTrains = soup.findAll(['div','img'])
         
